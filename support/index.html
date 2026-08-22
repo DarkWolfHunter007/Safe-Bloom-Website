@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & Help Center — Safe Bloom</title>
+  <meta name="description" content="Safe Bloom Help Center. Guides for encrypted vault backups, notification reliability, biometric security, and bug reporting.">
+  <meta name="theme-color" content="#8e3b68">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Safe Bloom — Support & Help Center">
+  <meta property="og:description" content="Help guides, troubleshooting, backup procedures, and community support for Safe Bloom.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/safe-bloom-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/safe-bloom-logo.png">
+  
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="../" class="brand" aria-label="Safe Bloom Homepage">
+        <img src="../assets/safe-bloom-logo.png" alt="Safe Bloom Logo" class="brand-logo" width="38" height="38">
+        <div class="brand-title">
+          <span>Safe Bloom</span>
+          <span class="brand-badge">Support</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="../" class="nav-link">Home</a></li>
+          <li><a href="../#features" class="nav-link">Features</a></li>
+          <li><a href="../privacy/" class="nav-link">Privacy</a></li>
+          <li><a href="../support/" class="nav-link active">Support</a></li>
+          <li><a href="../faq/" class="nav-link">FAQ</a></li>
+          <li><a href="../roadmap/" class="nav-link">Roadmap</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../#download" class="btn btn-primary btn-sm">Get Safe Bloom</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Header Banner -->
+    <section class="hero" style="padding-bottom: 2rem;">
+      <div class="container container-narrow">
+        <div class="hero-pill">
+          <span class="badge badge-sage">🤝 Community & Help</span>
+        </div>
+        <h1 class="hero-title">
+          Support & <span class="gradient-text">Troubleshooting</span>
+        </h1>
+        <p class="hero-subtitle">
+          Need assistance with backups, notifications, or device migration? Explore our practical self-help guides or connect with our open-source community.
+        </p>
+      </div>
+    </section>
+
+    <!-- Support Channels Grid -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="grid-3" style="margin-bottom: 3.5rem;">
+          
+          <div class="card">
+            <div class="card-icon sage">📖</div>
+            <h3 class="card-title">Frequently Asked Questions</h3>
+            <p class="card-text">
+              Quick answers to common questions regarding cycle calculations, pregnancy mode, and local encrypted storage.
+            </p>
+            <div style="margin-top: 1.25rem;">
+              <a href="../faq/" class="btn btn-secondary btn-sm">Browse FAQ →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon purple">🐛</div>
+            <h3 class="card-title">Bug Reports & Issues</h3>
+            <p class="card-text">
+              Encountered a glitch or unexpected behavior? Report it directly to our developer team on GitHub.
+            </p>
+            <div style="margin-top: 1.25rem;">
+              <a href="https://github.com/DarkWolfHunter007/Safe-Bloom/issues" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                Open GitHub Issue →
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon gold">💡</div>
+            <h3 class="card-title">Community Discussions</h3>
+            <p class="card-text">
+              Share feedback, vote on roadmap features, and exchange tips with other privacy-conscious users.
+            </p>
+            <div style="margin-top: 1.25rem;">
+              <a href="https://github.com/DarkWolfHunter007/Safe-Bloom/discussions" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                Join Discussions →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Troubleshooting Guides -->
+        <div class="section-header">
+          <span class="section-tag">Self-Help Guides</span>
+          <h2 class="section-title">Common Solutions & How-Tos</h2>
+        </div>
+
+        <div class="grid-2" style="margin-bottom: 3.5rem;">
+          
+          <!-- Guide 1: Backups -->
+          <article class="card">
+            <h3 class="card-title" style="color: var(--primary);">💾 How to Backup & Restore Your Data</h3>
+            <p class="card-text" style="margin-bottom: 1rem;">
+              Because Safe Bloom has zero cloud servers, moving to a new phone requires exporting an encrypted vault file:
+            </p>
+            <ol style="margin-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+              <li>Open <strong>Safe Bloom ➔ Settings ➔ Export Encrypted Backup</strong>.</li>
+              <li>Choose a strong, memorable passphrase (used for PBKDF2-HMAC-SHA256 derivation).</li>
+              <li>Save the resulting <code>safebloom_backup_*.json</code> file to an SD card, USB drive, or transfer via local Bluetooth.</li>
+              <li>On your new phone, install Safe Bloom and tap <strong>Restore from Backup</strong> on the Welcome Screen.</li>
+            </ol>
+            <div style="margin-top: 1rem; background-color: var(--surface-alt); padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text-muted);">
+              ⚠️ <em>Important:</em> We do not have your passphrase. If you forget it, the backup cannot be decrypted.
+            </div>
+          </article>
+
+          <!-- Guide 2: Notifications -->
+          <article class="card">
+            <h3 class="card-title" style="color: var(--primary);">🔔 Ensuring Notification Reliability</h3>
+            <p class="card-text" style="margin-bottom: 1rem;">
+              Since Safe Bloom triggers alarms strictly on-device without cloud push servers, aggressive Android battery managers can sometimes delay reminders:
+            </p>
+            <ol style="margin-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+              <li>Go to Android <strong>Settings ➔ Apps ➔ Safe Bloom ➔ Battery</strong>.</li>
+              <li>Select <strong>Unrestricted</strong> (or disable "Battery Optimization" / "Put app to sleep").</li>
+              <li>Ensure <strong>Allow Exact Alarms</strong> permission is granted under App Permissions.</li>
+              <li>Open Safe Bloom ➔ <strong>Settings ➔ Notification Diagnostics</strong> to verify alarm scheduling.</li>
+            </ol>
+            <div style="margin-top: 1rem; background-color: var(--surface-alt); padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text-muted);">
+              💡 <em>Pro-Tip:</em> On Samsung (OneUI) or Xiaomi (MIUI), make sure Safe Bloom is excluded from "Auto-Sleep Apps".
+            </div>
+          </article>
+
+          <!-- Guide 3: Ob/Gyn PDF Reports -->
+          <article class="card">
+            <h3 class="card-title" style="color: var(--primary);">📊 Generating Doctor Consultation Reports</h3>
+            <p class="card-text" style="margin-bottom: 1rem;">
+              Need to share cycle regularity or symptom logs with your gynecologist or healthcare provider?
+            </p>
+            <ol style="margin-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+              <li>Open Safe Bloom ➔ tap <strong>Reports & Analytics</strong>.</li>
+              <li>Select the date range (e.g. Last 6 Months, Past Year, or Full History).</li>
+              <li>Tap <strong>Generate Ob/Gyn Summary (PDF)</strong>.</li>
+              <li>The PDF is rendered 100% offline on your device and can be printed or exported to your preferred document viewer.</li>
+            </ol>
+          </article>
+
+          <!-- Guide 4: Biometrics & Screen Security -->
+          <article class="card">
+            <h3 class="card-title" style="color: var(--primary);">🛡️ Biometric Lock & Screenshot Privacy</h3>
+            <p class="card-text" style="margin-bottom: 1rem;">
+              Safe Bloom includes system-level controls to prevent unauthorized observation:
+            </p>
+            <ol style="margin-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+              <li><strong>Biometric Lock:</strong> Enable in Settings ➔ Security to require Fingerprint or Face ID whenever the app opens.</li>
+              <li><strong>Screen Security (`FLAG_SECURE`):</strong> Blocks screenshots, screen recorders, and hides the app preview in the Android App Switcher.</li>
+              <li><strong>Discreet Lock Screen Mode:</strong> Replaces cycle terms with neutral health check-in wording on lock screen notifications.</li>
+            </ol>
+          </article>
+
+        </div>
+
+        <!-- Security & Responsible Disclosure -->
+        <div class="card" style="background-color: var(--surface-alt); text-align: center; padding: 2.5rem 1.5rem;">
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">🔒 Responsible Security Disclosure</h3>
+          <p style="max-width: 680px; margin: 0 auto 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+            If you discover a cryptographic or security vulnerability in Safe Bloom, please report it responsibly via GitHub Security Advisories or by emailing our core maintainers.
+          </p>
+          <a href="https://github.com/DarkWolfHunter007/Safe-Bloom/security" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            Security Advisory Portal →
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="brand" style="margin-bottom: 0.5rem;">
+            <img src="../assets/safe-bloom-logo.png" alt="Safe Bloom Logo" class="brand-logo" width="32" height="32">
+            <span>Safe Bloom</span>
+          </a>
+          <p>
+            The zero-knowledge, offline-first menstrual cycle, fertility, and pregnancy companion.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="../" class="footer-link">Overview</a></li>
+            <li><a href="../#features" class="footer-link">Features</a></li>
+            <li><a href="../#download" class="footer-link">Download v1.0.0</a></li>
+            <li><a href="../roadmap/" class="footer-link">Roadmap & Wishlist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Privacy & Security</h4>
+          <ul class="footer-links">
+            <li><a href="../privacy/" class="footer-link">Privacy Architecture</a></li>
+            <li><a href="../privacy/#nuclear-purge" class="footer-link">Nuclear Purge</a></li>
+            <li><a href="../faq/" class="footer-link">Security FAQ</a></li>
+            <li><a href="../privacy/#threat-model" class="footer-link">Threat Model</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community & Help</h4>
+          <ul class="footer-links">
+            <li><a href="../support/" class="footer-link">Support & Help</a></li>
+            <li><a href="https://github.com/DarkWolfHunter007/Safe-Bloom" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Source</a></li>
+            <li><a href="https://github.com/DarkWolfHunter007/Safe-Bloom/releases" target="_blank" rel="noopener noreferrer" class="footer-link">Releases</a></li>
+            <li><a href="../roadmap/#support-the-project" class="footer-link">Support the Project</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Safe Bloom. Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
+        </div>
+        <div>
+          <span>Your Cycle. Your Privacy. Your Power.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

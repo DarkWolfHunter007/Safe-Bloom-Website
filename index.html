@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Bloom — Zero-Knowledge, Privacy-First Cycle, Fertility & Pregnancy Tracker</title>
+  <meta name="description" content="Safe Bloom is a 100% offline-first, zero-knowledge menstrual cycle, fertility, and pregnancy companion with hardware-backed AES-256 encryption.">
+  <meta name="theme-color" content="#8e3b68">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Safe Bloom — Zero-Knowledge Cycle & Pregnancy Tracker">
+  <meta property="og:description" content="Your cycle. Your privacy. Your power. 100% offline with zero cloud servers and hardware-backed AES-256 encryption.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/safe-bloom-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/safe-bloom-logo.png">
+  
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="./" class="brand" aria-label="Safe Bloom Homepage">
+        <img src="./assets/safe-bloom-logo.png" alt="Safe Bloom Logo" class="brand-logo" width="38" height="38">
+        <div class="brand-title">
+          <span>Safe Bloom</span>
+          <span class="brand-badge">v1.0.0</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="./" class="nav-link active">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="./privacy/" class="nav-link">Privacy</a></li>
+          <li><a href="./support/" class="nav-link">Support</a></li>
+          <li><a href="./faq/" class="nav-link">FAQ</a></li>
+          <li><a href="./roadmap/" class="nav-link">Roadmap</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-primary btn-sm">Get Safe Bloom</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-pill">
+          <span class="badge badge-primary">
+            🌸 100% Offline • Zero Cloud Servers • SQLCipher AES-256
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Your Cycle. Your Privacy.<br>
+          <span class="gradient-text">Your Power.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          The open-source, zero-knowledge cycle, fertility, and pregnancy tracker. Engineered with local AES-256 database encryption so your intimate health data never leaves your physical device.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download v1.0.0 APK
+          </a>
+          <a href="https://github.com/DarkWolfHunter007/Safe-Bloom" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Source Code (MIT)
+          </a>
+          <a href="./privacy/" class="btn btn-ghost btn-lg">
+            Explore Architecture →
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <span class="badge badge-sage">✓ 100% Local Device</span>
+          <span class="badge badge-purple">✓ Zero Remote Accounts</span>
+          <span class="badge badge-gold">✓ Hardware Keystore Keys</span>
+          <span class="badge badge-sage">✓ 242/242 Tests Passed</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy / Problem Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The Privacy Philosophy</span>
+          <h2 class="section-title">Intimate Health Data is Not a Commodity</h2>
+          <p class="section-description">
+            Mainstream period trackers harvest cycle histories, sexual intimacy records, and pregnancy markers for ad exchanges and cloud analytics. Safe Bloom guarantees that your body remains exclusively your business.
+          </p>
+        </div>
+
+        <div class="comparison-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Security & Architecture</th>
+                <th class="highlight">🌸 Safe Bloom</th>
+                <th>Standard Tracking Apps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cloud Servers & Accounts</strong></td>
+                <td class="highlight"><strong>None.</strong> 100% Offline-First.</td>
+                <td>Mandatory email/social login on remote servers</td>
+              </tr>
+              <tr>
+                <td><strong>Database Encryption</strong></td>
+                <td class="highlight"><strong>SQLCipher AES-256</strong> with Hardware Keystore</td>
+                <td>Unencrypted local SQLite or vulnerable cache</td>
+              </tr>
+              <tr>
+                <td><strong>Third-Party Analytics & Ads</strong></td>
+                <td class="highlight"><strong>Zero.</strong> No SDKs, no trackers.</td>
+                <td>Google Analytics, AppsFlyer, Meta Pixel, AdMob</td>
+              </tr>
+              <tr>
+                <td><strong>Doctor Consultation Summaries</strong></td>
+                <td class="highlight"><strong>Offline PDF Generator</strong> for Ob/Gyn visits</td>
+                <td>Paywalled behind subscription cloud portals</td>
+              </tr>
+              <tr>
+                <td><strong>Emergency Purge</strong></td>
+                <td class="highlight"><strong>Single-Tap Nuclear Wipe</strong> of keys & records</td>
+                <td>Delayed deletion tickets or persistent backups</td>
+              </tr>
+              <tr>
+                <td><strong>License & Auditability</strong></td>
+                <td class="highlight"><strong>MIT Open Source</strong> (Full Transparency)</td>
+                <td>Proprietary closed-source code</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineered For You</span>
+          <h2 class="section-title">Complete Reproductive Health Companion</h2>
+          <p class="section-description">
+            Medical-grade algorithmic accuracy meets uncompromising zero-knowledge privacy.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Feature 1 -->
+          <article class="card">
+            <div class="card-icon">🌸</div>
+            <h3 class="card-title">Dynamic Menstrual & Fertility Engine</h3>
+            <p class="card-text">
+              Moving-average predictive calculations that dynamically learn from your personal cycle history with spotting isolation to prevent phantom predictions.
+            </p>
+            <ul class="card-list">
+              <li>4-phase hormonal breakdown (Menstrual, Follicular, Ovulatory, Luteal)</li>
+              <li>Spotting isolation without skewing cycle averages</li>
+              <li>Retroactive cycle editing with instant recalculation</li>
+            </ul>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="card">
+            <div class="card-icon sage">👶</div>
+            <h3 class="card-title">Pregnancy & TTC Companion Mode</h3>
+            <p class="card-text">
+              Switch seamlessly into Conception or Pregnancy mode. Calculates gestational age from LMP, estimated due dates via Naegele's rule, and weekly fruit/veggie size comparisons.
+            </p>
+            <ul class="card-list">
+              <li>6-day fertile window with ovulation countdowns</li>
+              <li>Trimester milestones & weekly wellness guides</li>
+              <li>Automatic menstrual alarm suppression while pregnant</li>
+            </ul>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="card">
+            <div class="card-icon purple">📝</div>
+            <h3 class="card-title">Comprehensive Wellness & Water Tracker</h3>
+            <p class="card-text">
+              Log symptoms, moods, energy, cervical mucus, and flow intensity. Track daily hydration with quick-add increments and color-coded multi-month calendar markers.
+            </p>
+            <ul class="card-list">
+              <li>Categorized physical and emotional symptom library</li>
+              <li>Interactive daily water intake goal rings</li>
+              <li>Multi-month visual calendar with phase markers</li>
+            </ul>
+          </article>
+
+          <!-- Feature 4 -->
+          <article class="card">
+            <div class="card-icon gold">🔔</div>
+            <h3 class="card-title">100% Local Notifications & Alarms</h3>
+            <p class="card-text">
+              All reminders are scheduled directly via device OS alarm managers. Zero push servers, zero device tokens, and discreet lock screen privacy mode.
+            </p>
+            <ul class="card-list">
+              <li>Period (2-day) & Ovulation (1-day) advance alerts</li>
+              <li>Customizable daily logging and hydration reminders</li>
+              <li>Discreet wording to mask sensitive terms on lock screens</li>
+            </ul>
+          </article>
+
+          <!-- Feature 5 -->
+          <article class="card">
+            <div class="card-icon blue">📊</div>
+            <h3 class="card-title">Ob/Gyn Medical Clinical Reports</h3>
+            <p class="card-text">
+              Generate formatted medical-grade PDF summaries for your doctor visits with cycle variance statistics, flow patterns, and symptoms—rendered 100% on-device.
+            </p>
+            <ul class="card-list">
+              <li>Professional doctor consultation summaries</li>
+              <li>Cycle variance, spotting, and flow statistics</li>
+              <li>Zero cloud rendering or PDF server uploads</li>
+            </ul>
+          </article>
+
+          <!-- Feature 6 -->
+          <article class="card">
+            <div class="card-icon">🛡️</div>
+            <h3 class="card-title">Encrypted Vaults & Biometric Security</h3>
+            <p class="card-text">
+              Fingerprint, Face Unlock, and screenshot prevention (`FLAG_SECURE`). Export zero-knowledge password-encrypted vaults for air-gapped backup and restore.
+            </p>
+            <ul class="card-list">
+              <li>PBKDF2 + AES-GCM encrypted backup files</li>
+              <li>OS-level screen recording & capture prevention</li>
+              <li>Single-tap emergency cryptographic Nuclear Purge</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Spotlight Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="feature-split">
+          <div>
+            <span class="section-tag">Zero-Knowledge Guarantee</span>
+            <h2 class="section-title">Hardware-Backed Cryptography In Your Pocket</h2>
+            <p class="section-description" style="margin-bottom: 1.5rem;">
+              Safe Bloom never sends unencrypted bytes anywhere. Database keys are generated inside your phone's hardware Secure Element (Android Keystore / iOS Keychain) and never leave memory.
+            </p>
+            <ul class="card-list" style="margin-bottom: 2rem;">
+              <li><strong>SQLCipher AES-256:</strong> The entire database file on disk is encrypted at rest.</li>
+              <li><strong>Air-Gapped Portability:</strong> Backups are encrypted with PBKDF2-HMAC-SHA256 and AES-GCM before you save or move them.</li>
+              <li><strong>Emergency Nuclear Purge:</strong> Deletes keys, logs, and database files instantly with cryptographic wiping.</li>
+            </ul>
+            <a href="./privacy/" class="btn btn-secondary">Read Full Privacy Architecture →</a>
+          </div>
+
+          <div class="feature-media">
+            <div class="code-box">
+<span class="comment">// Safe Bloom Zero-Knowledge Flow</span>
+1. App Launch ➔ Biometric / PIN Auth
+2. Retrieve AES-256 Key from Hardware Keystore
+3. Mount Encrypted SQLCipher Database
+4. Schedule Local OS Alarms (Zero Cloud Push)
+5. Generate Offline Ob/Gyn PDF
+<span class="comment">// Result: Zero Cloud Calls • Total Peace of Mind</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section" id="download">
+      <div class="container container-narrow" style="text-align: center;">
+        <span class="section-tag">Get Started</span>
+        <h2 class="section-title">Download Safe Bloom v1.0.0</h2>
+        <p class="section-description" style="margin-bottom: 2rem;">
+          Safe Bloom is free, open source, and respects your autonomy. Download the release APK directly or inspect the source code on GitHub.
+        </p>
+
+        <div class="card" style="text-align: left; margin-bottom: 2rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+            <div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">Safe Bloom for Android</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Version 1.0.0 • Production Release • Android 8.0+</p>
+            </div>
+            <span class="badge badge-sage">Verified Stable</span>
+          </div>
+
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            Built with Flutter 3.x and SQLCipher. Full suite of 242 unit and widget tests passed with 100% coverage.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <a href="https://github.com/DarkWolfHunter007/Safe-Bloom/releases/tag/v1.0.0" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download APK (GitHub Release)
+            </a>
+            <a href="https://github.com/DarkWolfHunter007/Safe-Bloom" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              View Source Repository
+            </a>
+          </div>
+
+          <div style="margin-top: 1rem;">
+            <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 0.4rem;">
+              Release Verification Checksum
+            </label>
+            <div class="copy-box">
+              <span>SHA-256 Release Binary Verification available on GitHub Releases page</span>
+              <button type="button" class="btn btn-ghost btn-sm" data-copy="https://github.com/DarkWolfHunter007/Safe-Bloom/releases/tag/v1.0.0" data-toast-msg="Link copied to clipboard!">
+                Copy Link
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; color: var(--text-muted); font-size: 0.9rem;">
+          <span>📦 F-Droid: <em>In Packaging Pipeline</em></span>
+          <span>🍎 iOS Build: <em>On Roadmap (v1.1)</em></span>
+          <span>🌐 Web / PWA: <em>Planned</em></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Ready For Truly Private Cycle Tracking?</h2>
+          <p>
+            Experience the freedom of an air-gapped, zero-knowledge companion. No accounts. No subscriptions. No compromises.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://github.com/DarkWolfHunter007/Safe-Bloom/releases/tag/v1.0.0" class="btn btn-white btn-lg" target="_blank" rel="noopener noreferrer">
+              Download App Now
+            </a>
+            <a href="./faq/" class="btn btn-outline-white btn-lg">
+              Frequently Asked Questions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="./" class="brand" style="margin-bottom: 0.5rem;">
+            <img src="./assets/safe-bloom-logo.png" alt="Safe Bloom Logo" class="brand-logo" width="32" height="32">
+            <span>Safe Bloom</span>
+          </a>
+          <p>
+            The zero-knowledge, offline-first menstrual cycle, fertility, and pregnancy companion.
+          </p>
+          <div style="margin-top: 1rem;" class="footer-trust-chips">
+            <span class="badge badge-sage">100% Offline</span>
+            <span class="badge badge-purple">AES-256</span>
+            <span class="badge badge-gold">MIT License</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="./" class="footer-link">Overview</a></li>
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#download" class="footer-link">Download v1.0.0</a></li>
+            <li><a href="./roadmap/" class="footer-link">Roadmap & Wishlist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Privacy & Security</h4>
+          <ul class="footer-links">
+            <li><a href="./privacy/" class="footer-link">Privacy Architecture</a></li>
+            <li><a href="./privacy/#nuclear-purge" class="footer-link">Nuclear Purge</a></li>
+            <li><a href="./faq/" class="footer-link">Security FAQ</a></li>
+            <li><a href="./privacy/#threat-model" class="footer-link">Threat Model</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community & Help</h4>
+          <ul class="footer-links">
+            <li><a href="./support/" class="footer-link">Support & Help</a></li>
+            <li><a href="https://github.com/DarkWolfHunter007/Safe-Bloom" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Source</a></li>
+            <li><a href="https://github.com/DarkWolfHunter007/Safe-Bloom/releases" target="_blank" rel="noopener noreferrer" class="footer-link">Releases</a></li>
+            <li><a href="./roadmap/#support-the-project" class="footer-link">Support the Project</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Safe Bloom. Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
+        </div>
+        <div>
+          <span>Your Cycle. Your Privacy. Your Power.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

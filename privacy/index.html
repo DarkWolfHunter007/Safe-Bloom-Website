@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy & Architecture — Safe Bloom</title>
+  <meta name="description" content="Safe Bloom Zero-Knowledge Privacy Architecture. Learn how our offline-first model, hardware keystores, and SQLCipher AES-256 protect your reproductive health data.">
+  <meta name="theme-color" content="#8e3b68">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Safe Bloom — Zero-Knowledge Privacy Architecture">
+  <meta property="og:description" content="Safe Bloom has no cloud servers, no trackers, and no user accounts. Your intimate data is encrypted locally with hardware-backed AES-256.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="../assets/safe-bloom-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/safe-bloom-logo.png">
+  
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="../" class="brand" aria-label="Safe Bloom Homepage">
+        <img src="../assets/safe-bloom-logo.png" alt="Safe Bloom Logo" class="brand-logo" width="38" height="38">
+        <div class="brand-title">
+          <span>Safe Bloom</span>
+          <span class="brand-badge">Privacy</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="../" class="nav-link">Home</a></li>
+          <li><a href="../#features" class="nav-link">Features</a></li>
+          <li><a href="../privacy/" class="nav-link active">Privacy</a></li>
+          <li><a href="../support/" class="nav-link">Support</a></li>
+          <li><a href="../faq/" class="nav-link">FAQ</a></li>
+          <li><a href="../roadmap/" class="nav-link">Roadmap</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../#download" class="btn btn-primary btn-sm">Get Safe Bloom</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Header Banner -->
+    <section class="hero" style="padding-bottom: 2rem;">
+      <div class="container container-narrow">
+        <div class="hero-pill">
+          <span class="badge badge-primary">🔒 Zero-Knowledge Privacy Architecture</span>
+        </div>
+        <h1 class="hero-title">
+          Privacy Policy & <span class="gradient-text">Security Guarantee</span>
+        </h1>
+        <p class="hero-subtitle">
+          Safe Bloom does not have a traditional privacy policy because <strong>we do not collect, transmit, store, or sell any of your data</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container container-narrow">
+        
+        <!-- Summary Card -->
+        <div class="card" style="margin-bottom: 2.5rem; background-color: var(--primary-light); border-color: var(--primary-border);">
+          <h2 style="font-size: 1.35rem; color: var(--primary); margin-bottom: 0.75rem;">🌸 The 3-Sentence Summary</h2>
+          <ol style="margin-left: 1.25rem; font-size: 1.05rem; color: var(--text-main); line-height: 1.7;">
+            <li>Safe Bloom operates <strong>100% offline</strong> on your physical device with zero backend servers or user accounts.</li>
+            <li>All your reproductive data is encrypted at rest using <strong>SQLCipher AES-256</strong> with encryption keys anchored in your device's hardware Keystore.</li>
+            <li>We include <strong>zero analytics SDKs, zero advertising trackers, and zero telemetry</strong>.</li>
+          </ol>
+        </div>
+
+        <!-- Pillar 1: No Cloud Servers -->
+        <article style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-main);">1. Zero Cloud Servers & No Remote Accounts</h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+            When you open Safe Bloom, you will never be asked for an email address, phone number, Google account, or password. There is no remote server database where your cycles, sexual encounters, symptoms, or pregnancy milestones could ever be stored or leaked.
+          </p>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7;">
+            Even if a government agency, advertiser, or malicious actor served a subpoena or warrant to the Safe Bloom project developers, <strong>we have nothing to provide because we hold zero user data</strong>.
+          </p>
+        </article>
+
+        <!-- Pillar 2: Database Encryption -->
+        <article style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-main);">2. Hardware-Backed SQLCipher AES-256 Encryption</h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+            Unlike standard applications that store records in plain SQLite files, Safe Bloom encrypts the entire SQLite database file page-by-page using SQLCipher with 256-bit Advanced Encryption Standard (AES-256).
+          </p>
+          
+          <div class="card" style="margin: 1.5rem 0;">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">🔐 Key Management Architecture</h3>
+            <ul class="card-list">
+              <li><strong>Hardware Root of Trust:</strong> Cryptographic master keys are generated inside the Android Keystore / iOS Keychain hardware security module (TEE/SE).</li>
+              <li><strong>Zero Persistent Plaintext:</strong> Keys reside solely in encrypted transient memory while the app is actively in use and unlocked.</li>
+              <li><strong>Biometric Protection:</strong> Optional biometric authentication (Fingerprint / Face ID) prevents unauthorized physical access.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Pillar 3: Emergency Nuclear Purge -->
+        <article id="nuclear-purge" style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-main);">3. The Emergency Nuclear Purge Protocol</h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+            In high-risk or emergency situations where physical access to your phone may be compelled or seized, Safe Bloom provides a single-tap <strong>Emergency Nuclear Purge</strong> inside Settings.
+          </p>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+            Executing a Nuclear Purge performs:
+          </p>
+          <ul class="card-list" style="margin-bottom: 1rem;">
+            <li>Cryptographic zeroization and immediate destruction of hardware Keystore encryption keys.</li>
+            <li>Permanent file deletion of the local SQLCipher database, log caches, and temporary files.</li>
+            <li>Instant cancellation of all scheduled local notification alarms.</li>
+            <li>Immediate app state reset to uninitialized state.</li>
+          </ul>
+        </article>
+
+        <!-- Pillar 4: Threat Model -->
+        <article id="threat-model" style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-main);">4. Threat Model & Post-Roe Privacy</h2>
+          <div class="comparison-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Adversary / Threat Vector</th>
+                  <th class="highlight">Safe Bloom Defense Mechanism</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Cloud Data Breaches & Subpoenas</strong></td>
+                  <td class="highlight">Immune. Safe Bloom has no servers or cloud databases.</td>
+                </tr>
+                <tr>
+                  <td><strong>Ad Networks & Data Brokers</strong></td>
+                  <td class="highlight">Immune. Zero tracking SDKs or advertising identifiers.</td>
+                </tr>
+                <tr>
+                  <td><strong>Physical Phone Seizure (Locked)</strong></td>
+                  <td class="highlight">Protected by SQLCipher AES-256 and Biometric/Hardware Keystore.</td>
+                </tr>
+                <tr>
+                  <td><strong>Emergency Compelled Access</strong></td>
+                  <td class="highlight">Single-tap Nuclear Purge permanently wipes all data and keys instantly.</td>
+                </tr>
+                <tr>
+                  <td><strong>Shoulder Surfing / Casual Viewers</strong></td>
+                  <td class="highlight">Discreet notification mode masks reproductive terms on lock screens.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- Pillar 5: Permissions -->
+        <article style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-main);">5. Device Permissions Breakdown</h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+            Safe Bloom requests only the bare minimum native OS permissions required to function:
+          </p>
+          
+          <div class="grid-2">
+            <div class="card">
+              <h3 style="font-size: 1.1rem; color: var(--primary);">🔔 Notifications & Alarms</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                <code>POST_NOTIFICATIONS</code> & <code>SCHEDULE_EXACT_ALARM</code>: Used strictly to trigger on-device reminders for periods, fertility, and hydration. Reminders run locally on the phone's clock without remote servers.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3 style="font-size: 1.1rem; color: var(--accent-sage);">🛡️ Biometrics</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                <code>USE_BIOMETRIC</code> / <code>USE_FINGERPRINT</code>: Used to verify identity on app launch or when switching back from the background. Biometric templates never leave the OS secure enclave.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Open Source & Auditing -->
+        <article style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-main);">6. Open Source Verifiability</h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+            You do not have to take our word for it. The complete codebase for Safe Bloom is open source under the MIT License. Anyone can audit our code, verify that no network requests are made, or build the application from source.
+          </p>
+          <a href="https://github.com/DarkWolfHunter007/Safe-Bloom" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            Inspect Source Code on GitHub →
+          </a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="brand" style="margin-bottom: 0.5rem;">
+            <img src="../assets/safe-bloom-logo.png" alt="Safe Bloom Logo" class="brand-logo" width="32" height="32">
+            <span>Safe Bloom</span>
+          </a>
+          <p>
+            The zero-knowledge, offline-first menstrual cycle, fertility, and pregnancy companion.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="../" class="footer-link">Overview</a></li>
+            <li><a href="../#features" class="footer-link">Features</a></li>
+            <li><a href="../#download" class="footer-link">Download v1.0.0</a></li>
+            <li><a href="../roadmap/" class="footer-link">Roadmap & Wishlist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Privacy & Security</h4>
+          <ul class="footer-links">
+            <li><a href="../privacy/" class="footer-link">Privacy Architecture</a></li>
+            <li><a href="../privacy/#nuclear-purge" class="footer-link">Nuclear Purge</a></li>
+            <li><a href="../faq/" class="footer-link">Security FAQ</a></li>
+            <li><a href="../privacy/#threat-model" class="footer-link">Threat Model</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community & Help</h4>
+          <ul class="footer-links">
+            <li><a href="../support/" class="footer-link">Support & Help</a></li>
+            <li><a href="https://github.com/DarkWolfHunter007/Safe-Bloom" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Source</a></li>
+            <li><a href="https://github.com/DarkWolfHunter007/Safe-Bloom/releases" target="_blank" rel="noopener noreferrer" class="footer-link">Releases</a></li>
+            <li><a href="../roadmap/#support-the-project" class="footer-link">Support the Project</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Safe Bloom. Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
+        </div>
+        <div>
+          <span>Your Cycle. Your Privacy. Your Power.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

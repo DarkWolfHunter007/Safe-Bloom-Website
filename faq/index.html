@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions — Safe Bloom</title>
+  <meta name="description" content="Find answers to common questions about Safe Bloom's zero-knowledge security, offline predictions, pregnancy mode, encrypted backups, and open-source architecture.">
+  <meta name="theme-color" content="#8e3b68">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Safe Bloom — Frequently Asked Questions">
+  <meta property="og:description" content="Answers about Safe Bloom cycle predictions, offline encryption, pregnancy mode, backups, and privacy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/safe-bloom-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/safe-bloom-logo.png">
+  
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="../" class="brand" aria-label="Safe Bloom Homepage">
+        <img src="../assets/safe-bloom-logo.png" alt="Safe Bloom Logo" class="brand-logo" width="38" height="38">
+        <div class="brand-title">
+          <span>Safe Bloom</span>
+          <span class="brand-badge">FAQ</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="../" class="nav-link">Home</a></li>
+          <li><a href="../#features" class="nav-link">Features</a></li>
+          <li><a href="../privacy/" class="nav-link">Privacy</a></li>
+          <li><a href="../support/" class="nav-link">Support</a></li>
+          <li><a href="../faq/" class="nav-link active">FAQ</a></li>
+          <li><a href="../roadmap/" class="nav-link">Roadmap</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../#download" class="btn btn-primary btn-sm">Get Safe Bloom</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Header Banner -->
+    <section class="hero" style="padding-bottom: 2rem;">
+      <div class="container container-narrow">
+        <div class="hero-pill">
+          <span class="badge badge-purple">💡 Knowledge Base</span>
+        </div>
+        <h1 class="hero-title">
+          Frequently Asked <span class="gradient-text">Questions</span>
+        </h1>
+        <p class="hero-subtitle">
+          Everything you need to know about Safe Bloom's algorithms, local encryption, pregnancy companion mode, and backup systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Search and Accordions -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container container-narrow">
+        
+        <!-- Live Search Bar -->
+        <div class="search-box">
+          <svg class="search-icon-pos" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="faq-search" class="search-input" placeholder="Search questions (e.g. encryption, pregnancy, backups, purge)..." aria-label="Search FAQ">
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-faq-cat="all">All Questions</button>
+          <button class="filter-tab" data-faq-cat="privacy">Security & Privacy</button>
+          <button class="filter-tab" data-faq-cat="cycle">Cycle & Fertility</button>
+          <button class="filter-tab" data-faq-cat="pregnancy">Pregnancy & TTC</button>
+          <button class="filter-tab" data-faq-cat="backup">Backups & Data</button>
+          <button class="filter-tab" data-faq-cat="notifications">Notifications</button>
+        </div>
+
+        <!-- Accordion Group -->
+        <div class="accordion accordion-group">
+          
+          <!-- Item 1 -->
+          <div class="accordion-item faq-item" data-category="privacy">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Where is my personal health data stored?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Your data is stored exclusively on your physical phone inside an encrypted SQLCipher database with 256-bit AES encryption. Safe Bloom has no cloud servers, no central databases, and no remote user accounts. Your data never leaves your device unless you explicitly export an encrypted backup file.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item faq-item" data-category="privacy">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Can Safe Bloom developers or third parties see my data?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                No. Safe Bloom contains zero third-party analytics trackers, zero advertising SDKs, and zero telemetry. The encryption keys are generated inside your device's hardware Secure Element (Android Keystore / iOS Keychain) and are completely inaccessible to developers, servers, or advertising networks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item faq-item" data-category="privacy">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What is the Emergency Nuclear Purge?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                The Emergency Nuclear Purge is a safety feature accessible inside Settings. In high-risk situations where phone access might be compelled, tapping Nuclear Purge immediately destroys the hardware encryption keys, cryptographically deletes the SQLite database, wipes local caches, and cancels all scheduled notification alarms in less than a second.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item faq-item" data-category="cycle">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How does Safe Bloom calculate period and ovulation predictions?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Safe Bloom utilizes a dynamic moving-average algorithm that continuously learns from your confirmed historical cycles. It maps your reproductive month into a 4-phase hormonal timeline: Menstrual, Follicular, Ovulatory (peak 6-day fertile window), and Luteal phases.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="accordion-item faq-item" data-category="cycle">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What happens if I experience spotting or irregular bleeding?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Safe Bloom provides a dedicated Spotting logging classification. Unlike other apps that mistakenly treat mid-cycle spotting as the start of a whole new period and distort your cycle averages, Safe Bloom isolates spotting as an informational symptom without altering your predictive timeline.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="accordion-item faq-item" data-category="pregnancy">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How does Pregnancy Companion Mode work?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Activating Pregnancy Mode transforms the app into a prenatal tracking companion. It calculates gestational age (weeks and days) from your Last Menstrual Period (LMP) or conception date, projects Estimated Due Dates (EDD) using Naegele's rule, provides weekly fruit/veggie size milestones, and automatically suppresses menstrual alarms for the duration of the pregnancy.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="accordion-item faq-item" data-category="backup">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How do I migrate my data when upgrading to a new phone?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Navigate to <strong>Settings ➔ Export Encrypted Backup</strong>. Enter a secure passphrase. Safe Bloom generates a zero-knowledge encrypted JSON vault (using PBKDF2-HMAC-SHA256 and AES-GCM). Move this file to your new device via USB, local sharing, or SD card, then tap <strong>Restore from Backup</strong> on the Welcome Screen.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="accordion-item faq-item" data-category="notifications">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Do reminders require internet access or push notification tokens?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                No. All reminders (period predictions, ovulation alerts, hydration prompts, daily symptom logging) are scheduled directly with your device's native operating system alarm clock manager. Safe Bloom does not use Firebase Cloud Messaging (FCM), Apple APNs, or any external push servers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="accordion-item faq-item" data-category="notifications">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What is Discreet Lock Screen Mode?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Discreet Mode allows you to mask sensitive reproductive wording on your phone's lock screen. Instead of notifications displaying terms like "Period Predicted Tomorrow" or "Peak Ovulation Window", Discreet Mode displays neutral, gentle self-care prompts (e.g. "Safe Bloom: Daily health check-in time").
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="accordion-item faq-item" data-category="privacy">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Is Safe Bloom truly free and open source?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Yes. Safe Bloom is licensed under the permissive MIT License. There are no paywalls, no monthly subscription fees, and no locked features. The source code is publicly accessible on GitHub for review, audit, and community contributions.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Still have questions? -->
+        <div class="card" style="margin-top: 3rem; text-align: center; background-color: var(--surface-alt);">
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Still have a question?</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem;">
+            Explore our community discussions or submit a question directly on GitHub.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="../support/" class="btn btn-primary btn-sm">Support Center</a>
+            <a href="https://github.com/DarkWolfHunter007/Safe-Bloom/discussions" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ask on GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="brand" style="margin-bottom: 0.5rem;">
+            <img src="../assets/safe-bloom-logo.png" alt="Safe Bloom Logo" class="brand-logo" width="32" height="32">
+            <span>Safe Bloom</span>
+          </a>
+          <p>
+            The zero-knowledge, offline-first menstrual cycle, fertility, and pregnancy companion.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="../" class="footer-link">Overview</a></li>
+            <li><a href="../#features" class="footer-link">Features</a></li>
+            <li><a href="../#download" class="footer-link">Download v1.0.0</a></li>
+            <li><a href="../roadmap/" class="footer-link">Roadmap & Wishlist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Privacy & Security</h4>
+          <ul class="footer-links">
+            <li><a href="../privacy/" class="footer-link">Privacy Architecture</a></li>
+            <li><a href="../privacy/#nuclear-purge" class="footer-link">Nuclear Purge</a></li>
+            <li><a href="../faq/" class="footer-link">Security FAQ</a></li>
+            <li><a href="../privacy/#threat-model" class="footer-link">Threat Model</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community & Help</h4>
+          <ul class="footer-links">
+            <li><a href="../support/" class="footer-link">Support & Help</a></li>
+            <li><a href="https://github.com/DarkWolfHunter007/Safe-Bloom" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Source</a></li>
+            <li><a href="https://github.com/DarkWolfHunter007/Safe-Bloom/releases" target="_blank" rel="noopener noreferrer" class="footer-link">Releases</a></li>
+            <li><a href="../roadmap/#support-the-project" class="footer-link">Support the Project</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Safe Bloom. Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
+        </div>
+        <div>
+          <span>Your Cycle. Your Privacy. Your Power.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
