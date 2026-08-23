@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqSearch();
   initRoadmapFilter();
   initCopyButtons();
+  fetchSafeBloomRepoData();
 });
 
 /**
@@ -250,5 +251,31 @@ function initCopyButtons() {
     toastTimeout = setTimeout(() => {
       toast.classList.remove('show');
     }, 2500);
+  }
+}
+
+/**
+ * Auto-fetch latest release & version info from Safe-Bloom repo
+ */
+async function fetchSafeBloomRepoData() {
+  try {
+    const res = await fetch('https://api.github.com/repos/DarkWolfHunter007/Safe-Bloom/releases/latest');
+    if (!res.ok) return;
+    const data = await res.json();
+    
+    if (data.tag_name) {
+      document.querySelectorAll('.brand-badge, [data-repo-version]').forEach(el => {
+        el.textContent = data.tag_name;
+      });
+    }
+
+    const apk = data.assets?.find(a => a.name.endsWith('.apk'));
+    if (apk?.browser_download_url) {
+      document.querySelectorAll('a[href*="releases/tag"]').forEach(btn => {
+        btn.href = apk.browser_download_url;
+      });
+    }
+  } catch (err) {
+    // ponytail: fallback to static HTML defaults if offline or rate limited
   }
 }
