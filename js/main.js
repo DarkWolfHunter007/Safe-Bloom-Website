@@ -211,8 +211,8 @@ function initRoadmapFilter() {
  * Copy to Clipboard with Toast Notification
  */
 function initCopyButtons() {
-  const copyButtons = document.querySelectorAll('[data-copy]');
-  if (copyButtons.length === 0) return;
+  const triggerElements = document.querySelectorAll('[data-copy], [data-toast-msg]');
+  if (triggerElements.length === 0) return;
 
   // Create toast element if not present
   let toast = document.querySelector('.toast');
@@ -221,27 +221,6 @@ function initCopyButtons() {
     toast.className = 'toast';
     document.body.appendChild(toast);
   }
-
-  copyButtons.forEach(btn => {
-    btn.addEventListener('click', async () => {
-      const textToCopy = btn.getAttribute('data-copy');
-      if (!textToCopy) return;
-
-      try {
-        await navigator.clipboard.writeText(textToCopy);
-        showToast(btn.getAttribute('data-toast-msg') || 'Copied to clipboard!');
-      } catch (err) {
-        // Fallback for older browsers
-        const textarea = document.createElement('textarea');
-        textarea.value = textToCopy;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-        showToast('Copied to clipboard!');
-      }
-    });
-  });
 
   let toastTimeout;
   function showToast(msg) {
@@ -252,6 +231,31 @@ function initCopyButtons() {
       toast.classList.remove('show');
     }, 2500);
   }
+
+  triggerElements.forEach(el => {
+    el.addEventListener('click', async () => {
+      const textToCopy = el.getAttribute('data-copy');
+      const msg = el.getAttribute('data-toast-msg') || 'Copied to clipboard!';
+
+      if (textToCopy) {
+        try {
+          await navigator.clipboard.writeText(textToCopy);
+          showToast(msg);
+        } catch (err) {
+          // Fallback for older browsers
+          const textarea = document.createElement('textarea');
+          textarea.value = textToCopy;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+          showToast(msg);
+        }
+      } else {
+        showToast(msg);
+      }
+    });
+  });
 }
 
 /**
